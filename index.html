@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tic Tac Toe</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700,400" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="choose-tile-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Choose a Tile</h4>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-x-btn" type="button" class="btn btn-danger"><span class="fa fa-close"></span></button>
+                    <button id="modal-o-btn" type="button" class="btn btn-success"><span class="fa fa-circle-o"></span></button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="container square text-center">
+        <div class="row square-row">
+            <div id="sq-0" class="square-sm col-xs-4"></div>
+            <div id="sq-1" class="square-sm col-xs-4"></div>
+            <div id="sq-2" class="square-sm col-xs-4"></div>
+        </div>
+        <div class="row square-row">
+            <div id="sq-3" class="square-sm col-xs-4"></div>
+            <div id="sq-4" class="square-sm col-xs-4"></div>
+            <div id="sq-5" class="square-sm col-xs-4"></div>
+        </div>
+        <div class="row square-row">
+            <div id="sq-6" class="square-sm col-xs-4"></div>
+            <div id="sq-7" class="square-sm col-xs-4"></div>
+            <div id="sq-8" class="square-sm col-xs-4"></div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="main.js"></script>
+</body>
+
+</html>
